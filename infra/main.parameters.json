@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "environmentName": {
+        "value": "${AZURE_ENV_NAME}"
+      },
+      "location": {
+        "value": "${AZURE_LOCATION}"
+      },
+      "deployBaselineWebappExists": {
+        "value": "${SERVICE_DEPLOY_BASELINE_WEBAPP_RESOURCE_EXISTS=false}"
+      },
+      "principalId": {
+        "value": "${AZURE_PRINCIPAL_ID}"
+      },
+      "adminUserName": {
+        "value": "azureuser"
+      },
+      "adminPassword": {
+        "value": "AzureDemo!!"
+      },
+      "emailAddress": {
+        "value": "demo@demo.com"
+      }
+    }
+}
