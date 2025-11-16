@@ -17,6 +17,7 @@ param principalId string
 
 var tags = {
   'azd-env-name': environmentName
+  'SecurityControl': 'Ignore'
 }
 @description('The admin user name for the Azure SQL instance.')
 param adminUserName string
